@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext) {
 			// 1.创建并显示Webview
 			const panel = vscode.window.createWebviewPanel(
 				// 该webview的标识，任意字符串
-				'WeRead',
+				'wxRead',
 				// webview面板的标题，会展示给用户
 				'微信读书',
 				// webview面板所在的分栏
@@ -40,10 +40,10 @@ export function activate(context: vscode.ExtensionContext) {
 	 
 			);
 			//设置标题前图标
-			panel.iconPath = {
-				dark: vscode.Uri.file(context.extensionPath + '/Images/iconDark.png'),
-				light: vscode.Uri.file(context.extensionPath + '/Images/iconBlack.png')
-			};
+			// panel.iconPath = {
+			// 	dark: vscode.Uri.file(context.extensionPath + '/Images/iconDark.png'),
+			// 	light: vscode.Uri.file(context.extensionPath + '/Images/iconBlack.png')
+			// };
 	 
 			panel.webview.html = `<!DOCTYPE html>
 								<html lang="en">
